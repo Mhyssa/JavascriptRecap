@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62,5%; /* 1rem = 10px*/
+}
+
+body {
+    font-size: 1.4rem;
+    font-family: arial;
+    color: #fff;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e2337;
+}
+
+.part2{
+    background-color: #1b8585;
+}
+
+.part3{
+    background-color: #74d148;
+}
+
+.modal-container{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 163, 163);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-details{
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    /* Pour positionner l'icone  */
+    position: relative;
+    padding: 3rem;
+    color: rgb(26, 26, 26);
+}
+
+.modal-details i{
+    position:absolute;
+    top: -2px;
+    right: -2px;
+    font-size: 2rem;
+    padding: 1rem;
+    color: goldenrod;
+}
+
+.modal-titre{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.code{
+    background-color: black;
+    color: blanchedalmond;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 1rem;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: none;
+}
+
+.btn-success{
+    height: 4rem;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}

@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62,5%; /* 1rem = 10px*/
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+body {
+    font-size: 1.4rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e2337;
+}
+
+/* STYLE MENU DESKTOP */
+.navbar-desktop{
+    height: 8rem;
+    /* centre verticalement */
+    line-height: 8rem; 
+    /* centre horizontalement */
+    text-align: center;
+}
+.navbar-desktop a{
+    padding: 3rem;
+}
+
+/* STYLE MENU MOBILE */
+.navbar-mobile{
+    display: none;
+}
+
+.navbar-mobile i{
+    position: fixed;
+    z-index: 9999;
+    top: 9px;
+    right: 15px;
+    font-size: 3rem;
+    color: #2fec00;
+}
+
+.modal{
+    background-color: #F92995;
+    height: 100vh;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    transition: top 0.9s;
+    opacity: 0.9;
+}
+.change-modal{
+    top: 0;
+}
+.navbar-mobile .navbar-mobile-list{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-mobile .navbar-mobile-list a{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #1e2337;
+    padding: 1rem;
+}
+
+/* Media queries  */
+
+@media screen and (max-width : 1004px) {
+    .navbar-desktop{
+        display: none;
+    }
+    
+    .navbar-mobile{
+        display: block;
+    }
+    
+}
+
