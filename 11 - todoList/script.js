@@ -24,6 +24,31 @@ form.addEventListener('submit', function(e){
                 `
 
     listItems.innerHTML += item;
+
+// Je selectionne tout les btn-delete existant de la page 
+const btnDelete = document.querySelectorAll('.btn-delete');
+btnDelete.forEach(i => {
+    console.log(btnDelete);
+    i.addEventListener('click', function(){
+        console.log('btn-delete cliqué');
+        // j'enleve l'element parent 
+        i.parentElement.remove();
+    });
+
 });
 
+// Je selectionne tout les btn-archive existant de la page 
+const btnArchive = document.querySelectorAll('.btn-archive');
+btnArchive.forEach(i => {
+    console.log(btnArchive);
+    i.addEventListener('click', function(){
+        // je cible l'élément parent de i 
+        const parent = i.parentElement;
+        // J'agis sur la div parent (class item )
+        parent.classList.toggle('done');
+    });
+});
+
+form.reset(); 
+});
 

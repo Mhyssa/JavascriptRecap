@@ -80,3 +80,7 @@ button{
     font-size: 2rem;
     background-color: rgb(188,102,102);
 }
+
+.done {
+    text-decoration: line-through;
+}
