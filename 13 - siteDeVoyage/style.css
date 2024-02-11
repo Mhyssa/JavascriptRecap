@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;/* 1rem = 10px*/
+}
+body{
+    font-size: 1.4rem;/* soit 14px*/
+    font-family: arial;
+    color: rgb(255, 255, 255);
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #1E2337; */
+    background-image: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: contrast(1.75);
+}
+
+h1{
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+.banniere-titre{
+    margin-bottom: 1rem;
+}
+#form{
+    display: flex;
+    align-items:center;
+}
+.field{
+    margin: 1rem;
+}
+
+.field select, input[type=date]{
+    height: 6rem;
+    width: 20rem;
+    font-family: arial;
+}
+button{
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: #e1a026;
+    color: white;
+}
+
+.liste-resultats{
+    display: flex;
+}
+
+.item{
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.724);
+    color: black;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 5px;
+}
+.item-pays{
+    font-weight: bold;
+    text-transform: uppercase;
+}
